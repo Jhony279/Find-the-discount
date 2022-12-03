@@ -4,11 +4,16 @@
 package org.findthediscount.johnathan;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public double findtheDiscount(double fullPrice, double discount) {
+        return fullPrice - ((discount / 100) * fullPrice);
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+       double fullPrice;
+       fullPrice = 2384;
+       double discount;
+       discount = 24;
+        System.out.println(new App().findtheDiscount( fullPrice, discount));
+        
     }
 }
